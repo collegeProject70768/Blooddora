@@ -1,0 +1,277 @@
+/*  GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+
+
+/* DONOR SECTION  */
+
+.donor-section {
+    background: #0f172a;
+    padding: 80px 8%;
+}
+
+
+.donor-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+
+.donor-info {
+    color: white;
+}
+
+
+.donor-info>p:first-child {
+    color: #f87171;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+.donor-info h2 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+
+.donor-info h2 span {
+    color: #ef4444;
+}
+
+
+.donor-info>p {
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+
+.donor-points {
+    margin-top: 30px;
+}
+
+
+.donor-points div {
+    margin: 18px 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: white;
+}
+
+
+/* Donor Form */
+
+.donor-form {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+.donor-form h2 {
+    color: #0f172a;
+    margin-bottom: 25px;
+}
+
+
+.input-group {
+    
+    margin-bottom: 18px;
+}
+.form-group {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+   font-weight: bold;
+     color: #334155;
+     
+}
+.form-group input{
+        width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none; 
+    color: #0f172a;
+    margin-bottom: 25px;
+
+}
+.radio-group {
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.radio-group input {
+    width: 17px;
+    height: 17px;
+    accent-color: #344c62;
+    
+
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #334155;
+}
+
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #dc2626;
+}
+
+
+.input-group textarea {
+    resize: vertical;
+}
+
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+.donor-form button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #dc2626;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.donor-form button:hover {
+    background: #b91c1c;
+}
+
+/*  RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .blood-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .donor-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-image {
+        width: 280px;
+        height: 280px;
+    }
+
+    .blood-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+}

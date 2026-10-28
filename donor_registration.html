@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooddora - Blood Bank</title>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="donor_registration.css">
+    </link>
+
+</head>
+<!-- DONOR FORM -->
+<section class="donor-section" id="donor">
+    <div class="donor-container">
+        <div class="donor-info">
+            <p>JOIN OUR COMMUNITY</p>
+            <h2>
+                Become a
+                <span>Blood Donor</span>
+            </h2>
+            <p>
+                Your small act of kindness can help save someone's life.
+                Register yourself as a blood donor today.
+            </p>
+            <div class="donor-points">
+                <div>
+                    ❤️
+                    <span>Help save lives</span>
+                </div>
+                <div>
+                    🩸
+                    <span>Support your community</span>
+                </div>
+                <div>
+                    🤝
+                    <span>Make a difference</span>
+                </div>
+            </div>
+        </div>
+        <div class="donor-form">
+            <h2>Donor Registration</h2>
+            <form>
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Age</label>
+                        <input type="number"  id="age" name="age"
+                            min="18" max="60" placeholder="Age" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Blood Group</label>
+                        <select required>
+                            <option value="">
+                                Select Group
+                            </option>
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="Enter phone number" required>
+                </div>
+                <div class="form-group">
+                        <label for="email">Email <b>*</b></label>
+                        <input type="email" id="email" name="email"
+                            placeholder="Enter email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-donation">Last Blood Donation Date</label>
+                        <input type="date" id="last-donation" name="lastDonation">
+                    </div>
+
+
+                <div class="input-group">
+                    <label>Address</label>
+                    <textarea rows="4" placeholder="Enter your address"></textarea>
+                </div>
+                  <div class="form-group">
+                        <label>Available for Emergency Donation? <b>*</b></label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="emergency"
+                                    value="yes" required> Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="emergency" value="no"> No
+                            </label>
+                        </div>
+                    </div>
+                <button type="submit">
+                    Register as Donor
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>

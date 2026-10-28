@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blooddora - Blood Bank Management System</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header style=" background-color: rgb(162, 54, 54); height: 30px;"></header>
+<!--NAVBAR-->
+<header class="navbar">
+
+    <div class="logo">
+        <img src="logo.png" alt="">
+    </div>
+
+    <nav>
+        <a href="#" class="active">
+            <i class="fa-solid fa-house"></i> Home
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-droplet"></i> Blood Availability
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-heart"></i> Donate Blood
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i> Find Blood
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-file-lines"></i> Request Blood
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-user"></i> Login / Register
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-phone"></i> Contact Us
+        </a>
+    </nav>
+
+</header>
+
+
+<!--HERO-->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-title">BLOOD BANK MANAGEMENT SYSTEM</p>
+
+        <h1>
+            Donate Blood,<br>
+            <span>Save Lives</span>
+        </h1>
+
+        <p class="hero-text">
+            Your one donation can give someone<br>
+            another chance at life.
+        </p>
+
+        <div class="hero-buttons">
+            <button class="btn red-btn" onclick="window.location.href='donor_registration.html'">
+                <i class="fa-solid fa-droplet"></i>
+                Donate Blood
+            </button>
+
+            <button class="btn white-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Find Blood
+            </button>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="donar-image.jpeg" alt="">
+    </div>
+
+</section>
+
+
+<!--BLOOD AVAILABILITY -->
+<section class="section">
+
+    <div class="section-heading">
+
+        <div>
+            <h2>
+                <i class="fa-solid fa-droplet"></i>
+                Blood Availability
+            </h2>
+
+            <p>Check the current availability of blood units in our bank.</p>
+        </div>
+
+        <button class="view-btn">
+            View All <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+
+    <div class="blood-cards">
+
+        <div class="blood-card">
+           
+            <h3>A+</h3>
+            <div class="blood-icon">
+                 <img src="blooddrop_transparent.png" alt="">
+                </div>
+            <strong>18 Units</strong>
+        </div>
+
+        <div class="blood-card">
+          
+            <h3>A−</h3>
+            <div class="blood-icon"> <img src="blooddrop_transparent.png" alt=""></div>
+            <strong>10 Units</strong>
+        </div>
+
+        <div class="blood-card">
+           
+            <h3>B+</h3>
+            <div class="blood-icon"> <img src="blooddrop_transparent.png" alt=""></div>
+            <strong>15 Units</strong>
+        </div>
+
+        <div class="blood-card">
+           
+            <h3>B−</h3>
+            <div class="blood-icon"> <img src="blooddrop_transparent.png" alt=""> </div>
+            <strong>8 Units</strong>
+        </div>
+
+        <div class="blood-card">
+          
+            <h3>O+</h3>
+            <div class="blood-icon">  <img src="blooddrop_transparent.png" alt=""></div>
+            <strong>25 Units</strong>
+        </div>
+
+        <div class="blood-card">
+            
+            <h3>O−</h3>
+            <div class="blood-icon"> <img src="blooddrop_transparent.png" alt=""></div>
+            <strong>12 Units</strong>
+        </div>
+
+        <div class="blood-card">
+             
+            <h3>AB+</h3>
+              <div class="blood-icon"> <img src="blooddrop_transparent.png" alt=""></div>
+            <strong>6 Units</strong>
+        </div>
+
+        <div class="blood-card">
+           
+            <h3>AB−</h3>
+            <div class="blood-icon">  <img src="blooddrop_transparent.png" alt=""></div>
+            <strong>4 Units</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- URGENT BLOOD -->
+<section class="urgent">
+
+    <div class="urgent-icon">
+        <i class="fa-solid fa-bell"></i>
+    </div>
+
+    <div class="urgent-text">
+        <h2>Need Blood Urgently?</h2>
+        <p>Find available blood near you and submit a request.</p>
+    </div>
+
+    <div class="heartbeat">
+        〰〰〰〰〰
+    </div>
+
+    <button class="red-btn">
+        Request Blood
+        <i class="fa-solid fa-arrow-right"></i>
+    </button>
+
+</section>
+
+
+<!--HOW IT WORKS -->
+<section class="section how-section">
+
+    <div class="section-title">
+        <h2>
+            <i class="fa-solid fa-gear"></i>
+            How It Works
+        </h2>
+
+        <p>Getting blood is simple. Just follow these steps.</p>
+    </div>
+
+
+    <div class="steps">
+
+        <div class="step">
+
+            <span class="number">1</span>
+
+            <div class="step-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <h3>Register</h3>
+
+            <p>Create your account<br>on our platform.</p>
+
+        </div>
+
+
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+
+        <div class="step">
+
+            <span class="number">2</span>
+
+            <div class="step-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <h3>Search Blood</h3>
+
+            <p>Find the required blood<br>group near you.</p>
+
+        </div>
+
+
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+
+        <div class="step">
+
+            <span class="number">3</span>
+
+            <div class="step-icon">
+                <i class="fa-solid fa-file-lines"></i>
+            </div>
+
+            <h3>Send Request</h3>
+
+            <p>Submit a request<br>for blood.</p>
+
+        </div>
+
+
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+
+        <div class="step">
+
+            <span class="number">4</span>
+
+            <div class="step-icon">
+                <i class="fa-solid fa-droplet"></i>
+            </div>
+
+            <h3>Receive Blood</h3>
+
+            <p>Get connected with donors<br>and receive blood.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!--WHY CHOOSE-->
+<section class="why">
+
+    <div class="section-title">
+        <h2>
+            <i class="fa-solid fa-star"></i>
+            Why Choose Our System?
+        </h2>
+    </div>
+
+
+    <div class="features">
+
+        <div class="feature">
+            <i class="fa-solid fa-droplet"></i>
+            <p>Real-time<br>blood availability</p>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-magnifying-glass"></i>
+              <p>Quick blood<br>search</p>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-users"></i>
+            <p>Donor<br>management</p>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-bell"></i>
+            <p>Emergency<br>requests</p>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-shield-halved"></i>
+            <p>Secure<br>records</p>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-database"></i>
+            <p>Blood inventory<br>management</p>
+        </div>
+
+    </div>
+
+</section> 
+
+
+<!--EVERYONE-->
+
+<section class="everyone-section" style="margin-top: 20px; margin-bottom: 20px;">
+    <div class="everyone-container">
+
+        <!-- Left Content -->
+        <div class="everyone-intro">
+            <h2>For Everyone Who Cares</h2>
+
+            <p>
+                Our platform connects donors, seekers, hospitals,
+                blood banks and administrators — all in one place.
+            </p>
+        </div>
+
+        <!-- Right Cards -->
+        <div class="everyone-cards">
+
+            <!-- Donor -->
+            <div class="role-card">
+                <div class="role-icon">
+                    <!-- Blood Drop -->
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 2.5C12 2.5 5 10.2 5 15.1C5 19.1 8.1 22 12 22C15.9 22 19 19.1 19 15.1C19 10.2 12 2.5 12 2.5Z"/>
+                    </svg>
+                </div>
+
+                <h3>Donor</h3>
+
+                <p>
+                    Donate blood<br>
+                    and make a difference.
+                </p>
+
+                <a href="#" class="role-arrow">→</a>
+            </div>
+
+
+            <!-- Blood Seeker -->
+            <div class="role-card">
+                <div class="role-icon">
+                    <!-- User -->
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="7" r="3.5"/>
+                        <path d="M5 21C5.4 16.9 8 14.5 12 14.5C16 14.5 18.6 16.9 19 21"/>
+                    </svg>
+                </div>
+
+                <h3>Blood Seeker</h3>
+
+                <p>
+                    Find blood<br>
+                    when you need it.
+                </p>
+
+                <a href="#" class="role-arrow">→</a>
+            </div>
+
+
+            <!-- Hospital -->
+            <div class="role-card">
+                <div class="role-icon">
+                    <!-- Hospital -->
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 21V7L12 4L20 7V21"/>
+                        <path d="M9 21V16H15V21"/>
+                        <path d="M8 9H10"/>
+                        <path d="M14 9H16"/>
+                        <path d="M8 12H10"/>
+                        <path d="M14 12H16"/>
+                        <path d="M11 7V11"/>
+                        <path d="M9 9H13"/>
+                    </svg>
+                </div>
+
+                <h3>Hospital</h3>
+
+                <p>
+                    Submit requests<br>
+                    and manage needs.
+                </p>
+
+                <a href="#" class="role-arrow">→</a>
+            </div>
+
+
+            <!-- Blood Bank -->
+            <div class="role-card">
+                <div class="role-icon">
+                    <!-- Bank -->
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 9L12 4L21 9"/>
+                        <path d="M4 10H20"/>
+                        <path d="M6 10V18"/>
+                        <path d="M10 10V18"/>
+                        <path d="M14 10V18"/>
+                        <path d="M18 10V18"/>
+                        <path d="M3 20H21"/>
+                    </svg>
+                </div>
+
+                <h3>Blood Bank</h3>
+
+                <p>
+                    Manage inventory<br>
+                    and fulfill requests.
+                </p>
+
+                <a href="#" class="role-arrow">→</a>
+            </div>
+
+
+            <!-- Admin -->
+            <div class="role-card">
+                <div class="role-icon">
+                    <!-- Admin -->
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="9" cy="8" r="3"/>
+                        <path d="M3.5 20C3.8 16.5 5.7 14.5 9 14.5C12.3 14.5 14.2 16.5 14.5 20"/>
+                        <circle cx="17.5" cy="16.5" r="3"/>
+                        <path d="M17.5 14.8V18.2"/>
+                        <path d="M15.8 16.5H19.2"/>
+                    </svg>
+                </div>
+
+                <h3>Admin</h3>
+
+                <p>
+                    Monitor, verify<br>
+                    and keep the system running smoothly.
+                </p>
+
+                <a href="#" class="role-arrow">→</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!--DONOR BANNER-->
+<section class="donor-banner">
+
+    <div class="donor-image">
+        <img src="heroimage.jpeg" alt="">
+    </div>
+
+    <div class="donor-content">
+
+        <p>BE SOMEONE'S REASON TO LIVE.</p>
+
+        <h2>Become a Donor</h2>
+
+        <span>Your small effort can make a big difference.</span>
+
+        <button class="red-btn" onclick="window.location.href='donor_registration.html'">
+            Become a Donor
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+</section>
+
+
+<!--IMPACT-->
+<section class="impact">
+
+    <div class="impact-title">
+        <h2>
+            <i class="fa-solid fa-chart-simple"></i>
+            Our Impact
+        </h2>
+
+        <p>Together we save lives.</p>
+    </div>
+
+
+    <div class="impact-items">
+
+        <div>
+            <i class="fa-solid fa-users"></i>
+            <strong>500+</strong>
+            <span>Registered Donors</span>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-file-lines"></i>
+            <strong>100+</strong>
+            <span>Blood Requests</span>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-droplet"></i>
+            <strong>250+</strong>
+            <span>Successful Donations</span>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-users"></i>
+            <strong>8</strong>
+            <span>Blood Groups</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!--  FOOTER  -->
+<footer>
+
+    <div style="display: block;" >
+        <div class="footer-logo">
+             <img src="footer-logo.jpeg" alt="">
+        </div>
+        <div>
+            <span class="logo-span">Your Blood. Their Hope.</span>
+        </div>
+    </div>
+
+
+    <div class="footer-links">
+
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+
+    </div>
+
+
+    <div class="social">
+
+        <span>Follow Us</span>
+
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+    </div>
+
+
+    <div class="copyright">
+        © 2026 Blooddora. All Rights Reserved.
+    </div>
+
+</footer>
+
+</body>
+</html>
